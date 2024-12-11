@@ -341,32 +341,33 @@ function gurwaljin(a, b, c) {
 // Биеийн жингийн индекс тооцоолуур (Жин бага, Хэвийн, Илүү жинтэй, Тарган)
 
 function indexs(jin) {
-    for(let i = 0; i < jin.length; i++){
-        if(jin[i] <= 45){
+    let tootsoo;
+        if(jin <= 45){
             console.log( " Жин бага"); 
         }
-        else if( jin[i] <= 80 && jin >= 46 ){
+        else if( jin <= 80 && jin >= 46 ){
              console.log(" Хэвийн жинтэй ");
         } else{
             console.log(" Илүүдэл жинтэй");
         }
-    }
-}
-let jin = 46; 
-indexs(jin);
+  
+    return tootsoo;
+} console.log(indexs(46));
+
+
 
 // Тэмдэгт эгшиг эсвэл гийгүүлэгч эсэхийг шалгах
 /* includes = string dotor todorhoi utga baigaa esehiig shalgadag boolen 
 */
-// function Temdegt(char) {
-//     let vowels = ['a', 'e', 'i', 'o', 'u'];
-//         if (vowels.includes(char)) {
-//             console.log(char + " нь эгшиг үсэг.");
-//         } else {
-//             console.log(char + " нь гийгүүлэгч үсэг.");
-//         }  
-//         return vowels;
-// } console.log(Temdegt(e));
+function Temdegt(char) {
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
+        if (vowels.includes(char)) {
+            console.log(char + " нь эгшиг үсэг.");
+        } else {
+            console.log(char + " нь гийгүүлэгч үсэг.");
+        }  
+        return char;
+} Temdegt('e');
 
 
 // Энгийн хувьтай зээлийн тооцоолуур
@@ -410,48 +411,41 @@ return s;
 } console.log(onts_5(5));
 
 // Garag
-// function Garag(n) {
-
-//     for(let i = 1; i< n.length; i++){
-//         if(n[i] == 1){
-//             s = 'Monday'
-//         }else if(n[i] == 2){
-//             s = 'Thuesday'
-//         }else if(n[i] == 3){
-//             s = 'Wednesday'
-//         }else if(n[i] == 4){
-//            s = 'Thursday'
-//         }else if(n[i] == 5){
-//            s = 'Friday'
-//         }else if(n[i] == 6){
-//             s = 'Saturday'
-//         }else if(n[i] == 7){
-//            s = 'Sunday'
-//         }else {
-//            s = ' udur baihgvi'
-//         }
-//     }
-//  }; 
-//  Garag(7);
-
-
 function Garag(n) {
-if(n == 1)console.log( 'Monday');
-if(n == 2)console.log( 'Thuesday');
-if(n == 3)console.log( 'Wednesday');
-if(n == 4)console.log( 'Thursday');
-if(n == 5)console.log( 'Friday');
-if(n == 6)console.log( 'Saturday');
-if(n == 7)console.log( 'Sunday');
-} console.log(Garag(4))
+    let s;
+        if(n == 1){
+            s = 'Monday'
+        }else if(n == 2){
+            s = 'Thuesday'
+        }else if(n == 3){
+            s = 'Wednesday'
+        }else if(n == 4){
+           s = 'Thursday'
+        }else if(n == 5){
+           s = 'Friday'
+        }else if(n == 6){
+            s = 'Saturday'
+        }else if(n == 7){
+           s = 'Sunday'
+        }else {
+           s = ' udur baihgvi'
+        }
+        return s;     
+   
+ } console.log(Garag(7));
+  
 
 
 // Uliral
 function Uliral(u) {
-    if(u == 11 || u == 12 || u == 1 )console.log( 'Winter');
-if(u == 2 || u == 3 || u == 4)console.log( 'Spring');
-if(u == 5 || u == 6 || u == 7)console.log( 'Summer');
-if(u == 8 || u == 9 || u == 10)console.log( 'Autumn');
+    if(u == 11 || u == 12 || u == 1 )
+        console.log( 'Winter');
+if(u == 2 || u == 3 || u == 4)
+    console.log( 'Spring');
+if(u == 5 || u == 6 || u == 7)
+    console.log( 'Summer');
+if(u == 8 || u == 9 || u == 10)
+    console.log( 'Autumn');
 } console.log(Uliral(5));
 
 
@@ -461,7 +455,7 @@ function ilerhiilel(a, b, c) {
     let s;
     s = a * b - c;
     return s;
-} console.log( 'Илэрхийлэл хариу' + ilerhiilel(2, 3, 4));
+} console.log( 'Илэрхийлэлийн хариу бол ' + ilerhiilel(2, 3, 4));
  
 
 // IOI 3 UDAA
@@ -470,89 +464,109 @@ for(let i = 0; i < 3; i++ ){
     console.log("IOI")
 }
 // IOI n udaa
-// let n = 8;
-// for(let i = 0; i <= n ; i++ ){
-//     console.log("IOI");
-// }
+
+function IOI(n) {
+    for(let i = 1; i <= n ; i++ ){
+        console.log("IOI");
+    }
+} IOI(8);
+
 // Ehnii n toonii niilber
-// let n = 5;
-// let niilber = 0;
-// for(i = 1; i <= n; i++ ){
-//     niilber = niilber + i
-// } console.log(niilber)
+function toonii_niil(n) {
+    let niilber = 0;
+for(i = 0; i <= n; i++ ){
+    niilber = niilber + i
+} 
+return niilber;
+} console.log(toonii_niil(5))
+
 
 // n!
-// let n = 5;
-// let urjwer = 1; 
-// for(i = 1; i <= n; i++){
-//     urjwer = urjwer * i
-// } console.log(urjwer)
+function toonii_urjwer(n) {
+    let urjwer = 1; 
+    for(i = 1; i <= n; i++){
+        urjwer = urjwer * i
+    } 
+    return urjwer;
+} console.log(toonii_urjwer(5));
+
 
 //  100 -g n udaa nem
-// let n = 6;
-// let niilber = 0;
-// for(i = 1; i <= n; i++ ){
-//     niilber = niilber + 100
-// } console.log(niilber)
+function n_100(n) {
+    let niilber = 0;
+    for(i = 1; i <= n; i++ ){
+        niilber = niilber + 100
+    } 
+    return niilber;
+} console.log(n_100(6));
+
 
 // a toog n udaa nem
-// let n = 6;
-// let niilber = 0;
-// for(i = 1; i <= n; i++ ){
-//     niilber = niilber + 50
-// } console.log(niilber)
+function a_n(n) {
+    let niilber = 0;
+    for(i = 1; i <= n; i++ ){
+        niilber = niilber + 50
+    } 
+    return niilber;
+} console.log(a_n(6));
+
 
 // 2-in n zereg
-// let n = 5;
-// let niilber = 1;
-// for(i = 1; i <= n; i++ ){
-//     niilber = niilber * 2
-// } console.log(niilber)
+function zereg_2(n) {
+    let niilber = 1;
+    for(i = 1; i <= n; i++ ){
+        niilber = niilber * 2
+    } 
+    return niilber;
+} console.log(zereg_2(5));
+
 
 // a tooni n zereg
-// let n = 4;
-// let niilber = 1;
-// for(i = 1; i <= n; i++ ){
-//     niilber = niilber * 3
-// } console.log(niilber)
+function zereg_a(n) {
+    let niilber = 1;
+    for(i = 1; i <= n; i++ ){
+        niilber = niilber * 3
+    } 
+    return niilber;
+} console.log(zereg_a(4));
 
 // Tooni hurd
-// let n = 3;
-// let hurd = 1;
-// for(i = 1; i <= 10; i++){
-//     hurd = n * i;
-//     console.log( n + " * " + i + ' = ' + hurd)
-// }
+function hurd(n) {
+    for(i = 1; i <= 10; i++){
+        console.log( n + " * " + i + ' = ' + (n*i));
+    }
+} 
+hurd(3);
+
 
 // Toonii zergiin hurd
-let n = 5;
-let j = 3
-let hurd = 1;
-for(i = 1; i <= n; i++){
-    hurd = hurd * j;
-    console.log( j + " * " + i + ' = ' + hurd )
-}
+function  zereg_hurd(n) {
+    let j = 3
+    let hurd = 1;
+    for(i = 1; i <= n; i++){
+        hurd = hurd * j;
+        console.log( j + " ^ " + i + ' = ' + hurd )
+    }
+} zereg_hurd(5);
+
 
 // //  array элементрүү хандах
-// let studenAges = [10, 20, 30, 40];
-// console.log(studenAges[0]);
-// console.log(studenAges[studenAges.length -1]);
+let studenAges = [10, 20, 30, 40];
+console.log(studenAges[0]);
+console.log(studenAges[studenAges.length -1]);
+
+
  
  
 // array ямар нэг элементийн утгыг өөрчлөх
-// let tsuivan = [ 'mah', 'guril', 'tums', 'luuwan', ' baitsai'];
-// tsuivan[tsuivan.length -1 ] = 'onion';
-// tsuivan[1] = 'onion';
-// console.log(tsuivan);
+let tsuivan = [ 'mah', 'guril', 'tums', 'luuwan', ' baitsai'];
+tsuivan[tsuivan.length -1 ] = 'onion';
+tsuivan[1] = 'onion';
+console.log(tsuivan);
  
-// array & loop жишээ
-// let userBalance = [1000, 2000, 2500, 4000000, 13054, 323425];
-// let i = 0;
-// let sum = 0;
-// while( i < userBalance.length){
-//     userBalance[i] *= 1.15;
-//     i++;
-// } console.log(userBalance);
+
+
+
 //  Олон хэмжээст array
 /* Array утга ямар ч төрөл байж болох ба бид Array дотор array бас хийж болно.
 */
@@ -565,6 +579,35 @@ for(i = 1; i <= n; i++){
 const d = new Date();
 year = d.getFullYear();
 console.log(year);
+
+
+
+
+
+
+// splice
+let fullname = 'Bold Bat';
+function formatName(name) {
+    let firstName = name.split(" ")[1];
+    let lastName = name.split(" ")[0];
+    let firstChar = firstName[0];
+    return firstChar + ". " + lastName;
+    
+} console.log(formatName(fullname));
+
+
+let email = "bat.a@gmail.com"  // A. Bat
+
+function Forname(name) {
+    let firName = name.split("")[4];
+    let lastname = name.slice(0, 3);
+    lastname
+    return firName[0].toUpperCase() + ". " + lastname[0].toUpperCase() + lastname.slice(1) ;
+    
+}  console.log(Forname(email));
+
+
+
  
 
 
